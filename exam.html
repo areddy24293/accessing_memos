@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../src/styles.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+          }
+      
+          .container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-left:600px;
+            margin-top:20px;
+            margin-bottom:20px;
+            display:flex;
+          }
+      
+          .container h2 {
+            text-align: center;
+          }
+      
+          .container label {
+            display: block;
+            margin-bottom: 10px;
+          }
+      
+          .container input[type="text"],
+          .container input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+          }
+      
+          .container button {
+            width: 100%;
+            padding: 8px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+          }
+      
+          .container button:hover {
+            background-color: #45a049;
+          }
+          /* .exm{
+            width:1100px;
+            height:400px;
+            margin-left:200px;
+            margin-bottom:20px;
+          } */
+        </style>
+    </head>
+    <body class="container-fluid">
+        <div class="mainHeading" >
+            <img src="../assets/logo.png">
+    <br>
+          <h3 class="TM"> THE MONTESSORI</h3>
+        </div>
+    
+                                              <!-- --------------------------- NAVIGATION-BAR ------------------------------->
+    
+           
+          <nav class="navbar  bg-dark navbar-dark">
+            
+            <div class="navItem" > <a class="nav-link" href="index.html" target="frameBody"><span class="bi bi-house-fill"></span>Home</a></div>
+           <div class="navItem" >   <a class="nav-link" href="about.html" target="frameBody"><span class="bi bi-question-circle"></span> About</a></div>
+           <div class="navItem" > <a class="nav-link" href="service.html" target="frameBody"><span class="bi bi-question-circle"></span>service</a></div>
+            <div class="navItem" ><a class="nav-link" href="contact.html" target="frameBody"><span class="bi bi-telephone"></span> contact Us</a></div>
+            <div class="navItem" ><a class="nav-link" href="exam.html" target="frameBody"><span class="bi bi-book"></span> Examination-Branch</a></div>
+            <div class="navItem" ><a class="nav-link" href="gallery.html" target="frameBody"><span class="bi bi-images"></span>gallery</a></div>
+    
+          </nav>
+    
+
+          <!-- <div>
+            <img class="exm" src="../assets/exm1.jpg">
+          </div> -->
+          <!-------------------------------- LOGIN FORM ------------------------------------->
+          <div class="container">
+          
+            <h2>Login to student dashboard</h2>
+            <form id="loginForm">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required placeholder=" ROLL NO">
+        
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required placeholder=" DDMMYYYY">
+        
+              <button type="submit">Login</button>
+            </form>
+          </div>
+        
+          <script>
+            // Array of users with their credentials
+            const users = [
+
+//  -------------------third year-------------------------
+
+
+{ username: '110020467001', password: '20072003', page: href = "../public2/s1.html" },
+{ username: '110020467002', password: '17102002', page: href = "../public2/s2.html" },
+{ username: '110020467003', password: '05052003', page: href = "../public2/s3.html" },
+{ username: '110020467004', password: '06072002', page: href = "../public2/s4.html" },
+{ username: '110020467005', password: '02012003', page: href = "../public2/s5.html" },
+{ username: '110020467006', password: '12022002', page: href = "../public2/s6.html" },
+{ username: '110020467007', password: '03062002', page: href = "../public2/s7.html" },
+{ username: '110020467008', password: '11092003', page: href = "../public2/s8.html" },
+{ username: '110020467009', password: '03032002', page: href = "../public2/s9.html" },
+{ username: '110020467010', password: '02102002', page: href = "../public2/s10.html" },
+{ username: '110020467011', password: '01092002', page: href = "../public2/s2.html" },
+{ username: '110020467012', password: '15082003', page: href = "../public2/s2.html" },
+{ username: '110020467013', password: '11012001', page: href = "../public2/s2.html" },
+{ username: '110020467014', password: '10052002', page: href = "../public2/s2.html" },
+{ username: '110020467015', password: '03112003', page: href = "../public2/s2.html" },
+{ username: '110020467016', password: '26032002', page: href = "../public2/s2.html" },
+{ username: '110020467017', password: '13122003', page: href = "../public2/s2.html" },
+{ username: '110020467018', password: '31012001', page: href = "../public2/s2.html" },
+{ username: '110020467019', password: '08102002', page: href = "../public2/s2.html" },
+{ username: '110020467020', password: '26022001', page: href = "../public2/s2.html" },
+
+// ------------------------------- second year---------------
+
+
+{ username: '110021467001', password: '01092003', page: href = "../public2/r1.html" },
+{ username: '110021467002', password: '23072003', page: href = "../public2/r2.html" },
+{ username: '110021467003', password: '15012003', page: href = "../public2/r3.html" },
+{ username: '110021467004', password: '03022003', page: href = "../public2/r4.html" },
+{ username: '110021467005', password: '15042003', page: href = "../public2/r5.html" },
+{ username: '110021467006', password: '02072003', page: href = "../public2/r6.html" },
+{ username: '110021467007', password: '31032003', page: href = "../public2/r7.html" },
+{ username: '110021467008', password: '15082003', page: href = "../public2/r8.html" },
+{ username: '110021467009', password: '27022003', page: href = "../public2/r9.html" },
+{ username: '110021467010', password: '30012004', page: href = "../public2/r10.html" },
+{ username: '110021467011', password: '24122003', page: href = "../public2/r11.html" },
+{ username: '110021467012', password: '18062003', page: href = "../public2/r12.html" },
+{ username: '110021467013', password: '03032003', page: href = "../public2/r13.html" },
+{ username: '110021467014', password: '03042003', page: href = "../public2/r14.html" },
+{ username: '110021467015', password: '02062003', page: href = "../public2/r15.html" },
+{ username: '110021467016', password: '14022002', page: href = "../public2/r16.html" },
+{ username: '110021467017', password: '13122003', page: href = "../public2/r17.html" },
+{ username: '110021467018', password: '12032003', page: href = "../public2/r18.html" },
+{ username: '110021467019', password: '21042003', page: href = "../public2/r19.html" },
+{ username: '110021467020', password: '19072003', page: href = "../public2/r20.html" },          
+
+
+
+//-------------------------- first year-------------------------
+
+{ username: '110022467001', password: '02012004', page: href = "../public2/q1.html" },
+{ username: '110022467002', password: '12032004', page: href = "../public2/q2.html" },
+{ username: '110022467003', password: '15032004', page: href = "../public2/q3.html" },
+{ username: '110022467004', password: '19072004', page: href = "../public2/q4.html" },
+{ username: '110022467005', password: '21042004', page: href = "../public2/q5.html" },
+{ username: '110022467006', password: '24122004', page: href = "../public2/q6.html" },
+{ username: '110022467007', password: '05052004', page: href = "../public2/q7.html" },
+{ username: '110022467008', password: '27082004', page: href = "../public2/q8.html" },
+{ username: '110022467009', password: '18102004', page: href = "../public2/q9.html" },
+{ username: '110022467010', password: '16092004', page: href = "../public2/q10.html" },
+{ username: '110022467011', password: '07112004', page: href = "../public2/q11.html" },
+{ username: '110022467012', password: '13122004', page: href = "../public2/q12.html" },
+{ username: '110022467013', password: '14022004', page: href = "../public2/q13.html" },
+{ username: '110022467014', password: '02062004', page: href = "../public2/q14.html" },
+{ username: '110022467015', password: '03042004', page: href = "../public2/q15.html" },
+{ username: '110022467016', password: '03032004', page: href = "../public2/q16.html" },
+{ username: '110022467017', password: '18062004', page: href = "../public2/q17.html" },
+{ username: '110022467018', password: '24122004', page: href = "../public2/q18.html" },
+{ username: '110022467019', password: '30012004', page: href = "../public2/q19.html" },
+{ username: '110022467020', password: '27022004', page: href = "../public2/q20.html" }
+
+
+];
+
+        
+            // Function to authenticate user credentials
+            function authenticateUser(username, password) {
+              for (let i = 0; i < users.length; i++) {
+                if (users[i].username === username && users[i].password === password) {
+                  return users[i].page; // Return the webpage URL for the authenticated user
+                }
+              }
+              return null; // Authentication failed
+            }
+        
+            // Handle form submission
+            document.getElementById('loginForm').addEventListener('submit', function(event) {
+              event.preventDefault(); // Prevent form submission
+        
+              // Get username and password values
+              const username = document.getElementById('username').value;
+              const password = document.getElementById('password').value;
+        
+              const redirectUrl = authenticateUser(username, password);
+              if (redirectUrl) {
+                alert('Authentication successful');
+                window.open(redirectUrl, '_blank'); // Open the user's specific webpage in a new window/tab
+              } else {
+                alert('Authentication failed');
+              }
+            });
+          </script>
+
+
+
+
+<!-- <div>
+  <img class="exm" src="../assets/exm1.jpg">
+</div> -->
+
+
+
+          
+       <!-- ---------------------------footer----------------------------- -->
+       <footer>
+        <div class="row primary">
+          <div class="column about">
+        
+          <h3> THE MONTESSORI</h3>
+        
+           <p>
+              Learn Without Regrets!!!
+          </p>
+        
+          <div class="social">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-instagram-square"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+            <i class="fa-brands fa-youtube-square"></i>
+            <i class="fa-brands fa-whatsapp-square"></i>
+          </div>
+        </div>
+        
+        <div class="column links">
+          <ul>
+            <li> <a href="#">NCC</a></li>
+            <li> <a href="#">NSS </a></li>
+           <li> <a href="#">CANTEEN </a></li>
+            <li> <a href="#">HOSTEL  </a></li>
+           <li> <a href="#">Computer Lab  </a></li>
+           <li> <a href="#">ScienceLab</a></li>
+           </ul>
+          </div>
+        <div class="column links">
+          <ul>
+            <li> <a href="#">Social Works</a></li>
+            <li> <a href="#">Sports </a></li>
+           <li> <a href="#">Research Equipment </a></li>
+            <li> <a href="#">Intranet </a></li>
+           <li> <a href="#">Conferences  </a></li>
+           <li> <a href="#">Libraries</a></li>
+           </ul>
+          </div>
+        <div class="column links">
+          <ul>
+            <li> <a href="#">Placement Cell</a></li>
+            <li> <a href="#">Internships </a></li>
+           <li> <a href="#">Examination </a></li>
+            <li> <a href="#">About </a></li>
+           <li> <a href="#">Contact us  </a></li>
+           <li> <a href="#"> gallery</a></li>
+           </ul>
+          </div>
+        
+        </div>
+        </footer>
+      </body>
+      </html>
